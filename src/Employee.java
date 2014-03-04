@@ -19,6 +19,20 @@ public class Employee
 	{
 		int direction = (int)(Math.random() * 10);
 		
+		switch(direction)
+		{
+		case 1:
+		{
+			gridPosition.setRow(gridPosition.getRow()+1);
+			break;
+		}
+		default:
+		{
+			break;
+		}
+		}
+		
+		position = grid.getCellCenter(gridPosition);
 	}
 	
 	public void draw(Graphics g)

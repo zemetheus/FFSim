@@ -33,7 +33,19 @@ public class Grid
 		return new Coordinate<>(x,y);
 		
 	}
-	
+	public Coordinate<Integer> getCellCenter(Coordinate<Integer> coord)
+	{
+		int x, y,
+			row = coord.getRow(),
+			col = coord.getCol();
+		
+		x = (cellWidth * col)+cellWidth/2;
+		
+		y = (cellHeight * row)-cellHeight/2;
+		
+		return new Coordinate<>(x,y);
+		
+	}
 	public void setOccupied(int row, int col, boolean occupied)
 	{
 		occupiedArray[row][col] = occupied;
