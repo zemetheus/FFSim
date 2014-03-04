@@ -12,8 +12,8 @@ import javax.swing.*;
 
 public class Game extends JFrame
 {
-	private static final int WINDOW_WIDTH = 500;
-	private static final int WINDOW_HEIGHT = 750;
+	private static final int WINDOW_WIDTH = 700;
+	private static final int WINDOW_HEIGHT = 700;
 	
 	private GamePanel gamePanel;
 	private boolean startNewGame = false; //needs to be false to start FIRST new game
